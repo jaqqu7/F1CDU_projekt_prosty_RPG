@@ -4,10 +4,9 @@
  * Module dependencies.
  */
 
-var app             = require('../app');
-var debug           = require('debug')('myapp:server');
-var http            = require('http');
-
+var app = require('../app');
+var debug = require('debug')('myapp:server');
+var http = require('http');
 
 //var jsRegister = require('../public/javascripts/register_scripts.js');
 
