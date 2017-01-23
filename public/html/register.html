@@ -30,15 +30,27 @@ and open the template in the editor.
 
             <article id="articleClick">
               <h1>REJESTRACJA</h1>
-              <form name="registration-form" method="post">
-                      Nazwa użytkownika:
-                      <input type="text" name="username" id="userName" /><br>
-                      Hasło użytkownika:
-                      <input type="password" name="password" id="userPassword" /><br>
-                      E-mail:
-                      <input type="email" name="email" id="userEmail"  /><br>
-                      <input type="submit" value="Submit">
+              <form name="registrationform" method="post">
+                  <ul>
+                      <li><label for="username">Nazwa użytkownika [5-12 liter]:</label>
+                      <input type="text" name="username" id="username"/><br></li>
+                      
+                      <li><label for="email" >E-mail (login):</label>
+                      <input type="email" name="email" id="email"/><br></li>
+                      
+                      <li><label for="password" >Hasło użytkownika [6-20 znaków]:</label>
+                      <input type="password" name="password" id="password"/><br></li>
+                      
+                       <li><label for="passwordConfirm">Potwierdź hasło:</label>
+                       <input type="password" name="passwordConfirm" id="passwordConfrim"/><br></li>
+                       
+                      <li><input type="submit" value="Wyślij"></li>
+                  </ul>
+                   
               </form>
+              
+              
+              
             </article>
             
 

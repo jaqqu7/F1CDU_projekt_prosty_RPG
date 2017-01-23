@@ -6,11 +6,43 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Proste RPG tekstowe</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            $.get("/postac/data", function(data, status){
+                document.querySelector('#username').innerHTML = data;
+            });
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="container">
+            <header>
+                <a class="header-link" href="http://localhost:3000/">
+                     PROSTE RPG
+                </a>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:3000/">Strona Główna</a></li>
+                    <li><a href="http://localhost:3000/loch">Loch</a><br/><br/></li>
+                    <li><a href="http://localhost:3000/wylogowano">Wyloguj</a></li>
+                </ul>
+            </nav>
+            
+
+            <article>
+                <h1>Witaj</h1>
+                <p id="username"></p>
+            </article>
+            
+
+            <footer>Copyright &copy; </footer>
+
+        </div>
     </body>
 </html>

@@ -42,6 +42,8 @@ nav ul a {
     text-decoration: none;
 }
 
+
+
 article {
     margin-left: 170px;
     border-left: 1px solid gray;
@@ -49,3 +51,24 @@ article {
     overflow: hidden;
 }
 
+ form li{  
+    list-style: none;  
+    margin-bottom: 5px;  
+ }
+ 
+ form ul li label  
+ {  
+    float: left;  
+    clear: left;  
+    width: 265px;  
+    text-align: right;  
+    margin-right: 10px;  
+    font-family:Verdana, Arial, Helvetica, sans-serif;  
+    font-size:14px;  
+ } 
+
+form ul li input 
+{  
+    float: left;
+    margin-bottom: 10px;  
+}  
